@@ -85,11 +85,12 @@ class ReactJWPlayer extends Component {
     initialize({ component, player, playerOpts });
   }
   render() {
+    const { injectedContent } = this.props;
     return (
       <div
         className={this.props.className}
         dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
-          __html: `<div id="${this.props.playerId}"></div>`,
+          __html: `<div id="${this.props.playerId}">${injectedContent}</div>`,
         }}
       />
     );

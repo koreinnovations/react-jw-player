@@ -43,6 +43,7 @@ const propTypes = {
     PropTypes.array,
   ]),
   useMultiplePlayerScripts: PropTypes.bool,
+  injectedContent: PropTypes.string,
 };
 
 export default propTypes;
